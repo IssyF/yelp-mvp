@@ -12,13 +12,8 @@
 @import "components/index";
 @import "pages/index";
 
-body {
+.content {
   margin-left: 15px;
-}
-
-h1 {
-  margin-bottom: 20px;
-  margin-top: 10px;
 }
 
 h3 {
@@ -34,7 +29,8 @@ ul {
 }
 
 .button {
-  margin: 20px 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .box {
@@ -42,4 +38,46 @@ ul {
   border: 1px solid lightgray;
   padding: 10px 20px;
   background-color: white;
+  border-radius: 4px;
+}
+
+.box h5 {
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+}
+
+#restaurant-name {
+  color: #123b24;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#restaurant-name:hover {
+  color: #277047;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: #161d3d;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.back {
+  color: #123b24;
+}
+
+.back:hover {
+  color: #277047;
+  text-decoration: none;
 }

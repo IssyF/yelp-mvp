@@ -1,15 +1,21 @@
-<h1>RESTAURANTS</h1>
 
-<div class="button">
-  <%= link_to 'Add a Restaurant', new_restaurant_path, class: "btn btn-primary" %>
+<div class="header">
+  <h1>RESTAURANTS</h1>
 </div>
 
-<% @restaurants.each do |restaurant| %>
-
-  <div class="box">
-    <h4><%= link_to restaurant.name.capitalize, restaurant_path(restaurant) %></h4>
-    <h5><%= restaurant.category.capitalize %></h5>
-    <p>🏠 <%= restaurant.address %></p>
+<div class="content">
+  <div class="button">
+    <%= link_to 'Add a Restaurant', new_restaurant_path, class: "btn btn-dark" %>
   </div>
 
-<% end %>
+  <% @restaurants.each do |restaurant| %>
+
+    <div class="box">
+      <h4><%= link_to restaurant.name.capitalize, restaurant_path(restaurant), id: "restaurant-name" %></h4>
+      <h5><%= restaurant.category.capitalize %></h5>
+      <p>🏠 <%= restaurant.address %></p>
+    </div>
+
+  <% end %>
+
+</div>
