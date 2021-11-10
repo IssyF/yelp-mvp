@@ -1,3 +1,4 @@
+<p><%= link_to "👈 Go back", restaurants_path %></p>
 <h1>Add a Restaurant</h1>
 
 <%= simple_form_for(@restaurant) do |f| %>
@@ -7,5 +8,3 @@
   <%= f.select :category, %w[chinese italian japanese french belgian], prompt: 'Select Category' %>
   <%= f.submit %>
 <% end %>
-
-<p><%= link_to "Go back", restaurants_path %></p>

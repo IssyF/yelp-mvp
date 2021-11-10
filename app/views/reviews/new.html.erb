@@ -1,3 +1,5 @@
+<p><%= link_to "👈 Go back", restaurant_path(@restaurant) %></p>
+
 <h1>Add a Review for <%= @restaurant.name %></h1>
 
 <%= simple_form_for([@restaurant, @review]) do |f| %>
@@ -5,5 +7,3 @@
   <%= f.select :rating, (0..5).to_a, prompt: 'Select Rating' %>
   <%= f.submit %>
 <% end %>
-
-<p><%= link_to "Go back", restaurant_path(@restaurant) %></p>
