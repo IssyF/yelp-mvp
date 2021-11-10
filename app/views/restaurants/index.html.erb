@@ -1,7 +1,7 @@
-<h1>Restaurants</h1>
+<h1>RESTAURANTS</h1>
 
 <div class="button">
-  <%= link_to 'Add a restaurant', new_restaurant_path, class: "btn btn-primary" %>
+  <%= link_to 'Add a Restaurant', new_restaurant_path, class: "btn btn-primary" %>
 </div>
 
 <% @restaurants.each do |restaurant| %>
@@ -9,7 +9,7 @@
   <div class="box">
     <h4><%= link_to restaurant.name.capitalize, restaurant_path(restaurant) %></h4>
     <h5><%= restaurant.category.capitalize %></h5>
-    <p><%= restaurant.address %></p>
+    <p>🏠 <%= restaurant.address %></p>
   </div>
 
 <% end %>
